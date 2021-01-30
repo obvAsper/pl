@@ -1,0 +1,11 @@
+main: dev.arthur.spigot.blankplugin.blankPlugin
+name: blankPlugin
+version: 1.0
+author: Arthur and Xtof2all
+description: An Blank plugin spawning creepers
+commands:
+  creeperstart:
+    description: Spawns Creepers
+    usage: /creeperstart
+    permission: blankPlugin.creerperstart
+    permission-message: You don't have the blankPlugin.creeperstart permission.
