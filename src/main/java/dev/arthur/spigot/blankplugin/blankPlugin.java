@@ -3,6 +3,12 @@ package dev.arthur.spigot.blankplugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.World;
+
 
 public class blankPlugin extends JavaPlugin {
 
@@ -30,7 +36,11 @@ public class blankPlugin extends JavaPlugin {
             return true;
         }
         if (command.getName().equalsIgnoreCase("meme")) {
-            sender.sendMessage("Testing a meme...");
+            sender.sendMessage("Trying to start meme ");
+            World myWorld = Bukkit.getWorld("world");
+            Location spawnLocation = new Location(myWorld, 0, 10, 0);
+            Entity spawnedCreeper = myWorld.spawnEntity(spawnLocation, EntityType.CREEPER);
+            sender.sendMessage("We should have spawned a PIG! ");
         }
         return false;
     }
