@@ -23,13 +23,14 @@ public class blankPlugin extends JavaPlugin {
                              String[] args) {
         if (command.getName().equalsIgnoreCase("creeperstart")) {
             sender.sendMessage("You ran /creeperstart!");
-            sender.sendMessage("Kijk naar rechts, want Arthur zit daar... ");
             return true;
         }
         if (command.getName().equalsIgnoreCase("creeperstop")) {
             sender.sendMessage("you stopped creeper spawn from running ");
-            sender.sendMessage("Kijk naar rechts, want Arthur zit daar... ");
             return true;
+        }
+        if (command.getName().equalsIgnoreCase("meme")) {
+            sender.sendMessage("Testing a meme...");
         }
         return false;
     }

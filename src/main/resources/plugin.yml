@@ -9,3 +9,13 @@ commands:
     usage: /creeperstart
     permission: blankPlugin.creerperstart
     permission-message: You don't have the blankPlugin.creeperstart permission.
+  creeperstop:
+    description: Stops spawning of Creepers
+    usage: /creeperstop
+    permission: blankPlugin.creerperstop
+    permission-message: You don't have the blankPlugin.creeperstop permission.
+  meme:
+    description: meming everybody
+    usage: /meme
+    permission: blankPlugin.meme
+    permission-message: You don't have the blankPlugin.meme permission.
